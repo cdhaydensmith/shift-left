@@ -1,5 +1,4 @@
 # shift-left
-Fierce Software Workshop
 
 This contains all of the information and instructions for the Fierce SW workshop. In order to replicate what you saw, you will need to download the anchore-cli.
 
