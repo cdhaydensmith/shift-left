@@ -106,13 +106,13 @@ Add an image to the Anchore Engine
 
 .. code::
 
-    anchore-cli image add docker.io/library/debian:latest
+    anchore-cli image add docker.io/hjsmith07/testing:fierce
 
 Wait for an image to transition to ``analyzed``
 
 .. code::
 
-    anchore-cli image wait docker.io/library/debian:latest
+    anchore-cli image wait docker.io/hjsmith07/testing:fierce
 
 List images analyzed by the Anchore Engine
 
@@ -124,31 +124,31 @@ Get summary information for a specified image
 
 .. code::
 
-    anchore-cli image get docker.io/library/debian:latest
+    anchore-cli image get docker.io/hjsmith07/testing:fierce
 
 Perform a vulnerability scan on an image
 
 .. code::
 
-   anchore-cli image vuln docker.io/library/debian:latest os
+   anchore-cli image vuln docker.io/hjsmith07/testing:fierce os
 
 Perform a policy evaluation on an image
 
 .. code::
 
-   anchore-cli evaluate check docker.io/library/debian:latest --detail
+   anchore-cli evaluate check docker.io/hjsmith07/testing:fierce --detail
 
 List operating system packages present in an image
 
 .. code::
 
-    anchore-cli image content docker.io/library/debian:latest os
+    anchore-cli image content docker.io/hjsmith07/testing:fierce os
 
 Subscribe to receive webhook notifications when new CVEs are added to an update
 
 .. code::
 
-    anchore-cli subscription activate vuln_update docker.io/library/debian:latest
+    anchore-cli subscription activate vuln_update docker.io/hjsmith07/testing:fierce
 
 More Information
 ================
