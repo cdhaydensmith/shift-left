@@ -1,7 +1,6 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.2
 
-RUN yum update -y && \ 
-RUN yum clean all
+RUN curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall
 
 EXPOSE 22
 
